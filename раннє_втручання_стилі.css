@@ -1,0 +1,46 @@
+* {margin: 0;}
+main {display: grid;
+/*grid-template-areas: "main main main"
+"round round round"
+"introduction introduction introduction"
+"text fmiddle fmiddle"
+"text fsmall1 fsmall2"
+"video video video"
+"end end end";*/
+grid-template: 300px 60px 18% 42% 15% / 60% 20% 20%;
+justify-items: center;
+position: relative;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 16px;
+font-weight: 500;}
+
+.foto_main {grid-column: 1/4;
+}
+
+.foto_round {grid-column: 1/4;
+align-self: end;
+border: thick solid white;
+border-radius: 50%;}
+
+.introduction {grid-column: 1/4;
+margin: 10px 50px;}
+
+h1 {text-align: center;}
+
+.text {grid-row: 4/6;
+    margin-left: 50px;}
+
+.foto_middle {grid-column: 2/4;
+    margin: 5px 50px;
+}
+
+.foto1 {justify-self: end;
+margin: 7px;
+align-self: center;}
+
+.foto2 {justify-self: start;
+margin: 6px;
+align-self: center;}
+
+.video {margin: 3px;
+grid-column: 1/4;}
